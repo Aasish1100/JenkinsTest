@@ -2,20 +2,9 @@ pipeline {
   agent any
   stages {
     stage('Stage1') {
-      parallel {
-        stage('Stage1') {
-          steps {
-            bat 'echo "Ashish"'
-            bat 'echo "Hello World"'
-          }
-        }
-
-        stage('ParallelTest') {
-          steps {
-            echo 'This is parallel step'
-          }
-        }
-
+      steps {
+        bat 'echo "Ashish"'
+        bat 'echo "Hello World"'
       }
     }
 
