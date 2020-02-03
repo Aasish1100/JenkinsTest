@@ -3,7 +3,14 @@ pipeline {
   stages {
     stage('Stage1') {
       steps {
-        bat 'dir'
+        bat 'echo "Ashish"'
+        bat 'echo "Hello World"'
+      }
+    }
+
+    stage('Stage2') {
+      steps {
+        powershell 'get-service'
       }
     }
 
