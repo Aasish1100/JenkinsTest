@@ -14,5 +14,14 @@ pipeline {
       }
     }
 
+    stage('Stage3') {
+      steps {
+        timestamps() {
+          echo 'Current time'
+        }
+
+      }
+    }
+
   }
 }
